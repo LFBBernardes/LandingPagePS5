@@ -64,3 +64,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+// checkout
+
+document.addEventListener("DOMContentLoaded", function () {
+  const checkoutButton = document.querySelector("#checkout-btn");
+  const checkoutForm = document.querySelector("#checkout-form");
+  const addressForm = document.querySelector("#address-form");
+
+  checkoutButton.addEventListener("click", function () {
+    checkoutForm.style.display = "block";
+  });
+
+  addressForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Order placed successfully!");
+    localStorage.removeItem("cart");
+    loadCart();
+    checkoutForm.style.display = "none";
+  });
+});

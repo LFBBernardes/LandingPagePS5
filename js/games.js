@@ -33,6 +33,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Initialize cart count on page load
   updateCartCount();
 });
