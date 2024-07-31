@@ -10,12 +10,12 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/console.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">PlayStation</a>
+        <a class="navbar-brand" href="./index.html">PlayStation</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,33 +42,57 @@
         </div>
       </div>
     </nav>
-
-    <div class="container-fluid hero-section">
-      <div class="center-content">
-        <h1 class="display-1 text-white fade-in">PLAY</h1>
-        <img src="./Images/header.png" class="ps5-image" alt="PlayStation 5" />
-        <h1 class="display-1 text-white fade-in">STATION</h1>
-      </div>
-      <div class="adjectives">
-        <div>
-          Speed
-          <div class="line"></div>
+    <div class="container-fluid console-content">
+      <div class="row justify-content-end">
+        <div class="col-lg-5 console-image">
+          <img
+            src="./Images/header.png"
+            alt="PlayStation 5"
+            class="img-fluid"
+          />
         </div>
-        <div>
-          Powerful SSD
-          <div class="line"></div>
-        </div>
-        <div class="adjectives-right">
-          Modern
-          <div class="line"></div>
-        </div>
-        <div class="adjectives-right">
-          Dynamic
-          <div class="line"></div>
+        <div class="col-lg-6 console-info">
+          <h1 class="fade-in">PlayStation 5 Innovations</h1>
+          <div class="innovation-list">
+            <div class="innovation-item fade-in-up">
+              <h3>SSD Storage</h3>
+              <p>
+                Ultra-fast SSD enables near-instant load times and seamless game
+                worlds.
+              </p>
+            </div>
+            <div class="innovation-item fade-in-up">
+              <h3>DualSense Controller</h3>
+              <p>
+                Haptic feedback and adaptive triggers provide immersive gaming
+                experiences.
+              </p>
+            </div>
+            <div class="innovation-item fade-in-up">
+              <h3>3D Audio</h3>
+              <p>
+                Tempest 3D AudioTech delivers rich, immersive soundscapes in
+                supported games.
+              </p>
+            </div>
+            <div class="innovation-item fade-in-up">
+              <h3>Ray Tracing</h3>
+              <p>
+                Hardware-accelerated ray tracing for realistic lighting and
+                reflections.
+              </p>
+            </div>
+            <div class="innovation-item fade-in-up">
+              <h3>4K-8K Output</h3>
+              <p>
+                Supports 4K resolution at 120Hz and 8K output for stunning
+                visuals.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
     <footer class="footer">
       <div class="copyright">
         &copy; 2024 Luís Felipe Borges Bernardes. All rights reserved.
@@ -86,5 +110,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/console.js"></script>
   </body>
 </html>
